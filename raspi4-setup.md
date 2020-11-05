@@ -63,7 +63,7 @@ Set timezone:
     # alternatively: dpkg-reconfigure tzdata
 
 Customize /boot/config.txt:
-- I2C is needed, uncomment `#dtparam=i2c_arm=on` &rarr; `dtparam=i2c_arm=on`
+- I2C is needed for using a RTC, uncomment `#dtparam=i2c_arm=on` &rarr; `dtparam=i2c_arm=on`
 - if Wifi is not needed, add `dtoverlay=disable-wifi` at the end
 - Bluetooth is not needed, add `dtoverlay=disable-bt` at the end
 - Audio is not needed, comment `dtparam=audio=on` &rarr; `#dtparam=audio=on`
